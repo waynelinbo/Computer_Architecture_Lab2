@@ -24,15 +24,15 @@ int _start(){
 	volatile char *tx = (volatile char*) 0x40002000;
 	char *str1 = "The inner product of two vectors is ";
 
-    int a[3] = {-1, -2, 3};
-    int b[3] = {4, -5, -6};
+	int a[3] = {-1, -2, 3};
+	int b[3] = {4, -5, -6};
 	int length = 3;
 
 	int t = 0;
-    int sum = 0;
-    for (int i = 0; i < length; i++){
-        sum += a[i] * b[i];
-    }
+	int sum = 0;
+	for (int i = 0; i < length; i++){
+		sum += a[i] * b[i];
+	}
 
 //------------    print    ------------//
 
